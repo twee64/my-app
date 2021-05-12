@@ -130,7 +130,13 @@ export default class CreateRecipe extends Component {
           {/* <div class="validate"></div> */}
           <label>User Name </label>
 
-          <select ref="userInput"
+            <input  type="text"
+                required
+                className="form-control"
+                value={this.state.username}
+                onChange={this.onChangeUsername}
+
+          /* <select ref="userInput"
               required
               name ="username"
               className="form-control"
@@ -145,7 +151,8 @@ export default class CreateRecipe extends Component {
                     </option>;
                 })
               }
-          </select>
+          </select> */
+          />
         </div>
 
         <div className="col-lg-4 col-md-9 form-group"> 

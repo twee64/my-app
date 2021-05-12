@@ -40,14 +40,14 @@ export default class CreateUser extends Component {
         return (
             <div className="section-title">
             <p>Create New User</p>
-        <form onSubmit={this.onSubmit}>
-          <div className="form-group"> 
-            <label>Username </label>
-            <input  type="text"
-                required
-                className="form-control"
-                value={this.state.username}
-                onChange={this.onChangeUsername}
+                <form onSubmit={this.onSubmit}>
+                <div className="form-group"> 
+                    <label>Username </label>
+                    <input  type="text"
+                        required
+                        className="form-control"
+                        value={this.state.username}
+                        onChange={this.onChangeUsername}
                 />
           </div>
           <div className ="php-email-form">
